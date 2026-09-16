@@ -1,0 +1,1 @@
+This directory holds the progess record of Shujaat Ali Hashim while learning concepts of Javascript from youtube crash course of traversy media.  
