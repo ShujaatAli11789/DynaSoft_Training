@@ -1,4 +1,4 @@
-// dom is provided by window object which is then provided by the browser to interact with web page
+// dom is provided by window object which is then provided by the browser to interact with web page elements 
 
 // single selector
 
@@ -15,13 +15,21 @@
 // const HTMLElement = document.querySelector("h2")
 // HTMLElement.style.background = 'red'
 
-// event listerners
+// event listerners allow you to add the logic to the HTML elements
+// const btn  = document.querySelector('button')
+// btn.addEventListener('click',(e)=>{
+//     e.preventDefault()
+//     alert("button clicked")
+//     console.log(e.target)
+
+// })
+//  we are given a event object, when pssed as a parameter into the event listerners's function's parameter
+
+// following example allow you to change the a color of an another element by click button 
 const btn  = document.querySelector('button')
 btn.addEventListener('click',(e)=>{
     e.preventDefault()
-    alert("button clicked")
-    console.log(e.target)
+    document.getElementById("contactForm").style.background = "red"
+    document.querySelector("body").style.background = "gray"
 
 })
-
-//  we are given a event object, when pssed as a parameter into the event listerners's function's parameter
