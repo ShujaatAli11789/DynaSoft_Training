@@ -159,3 +159,25 @@ switch(day){
 // break makes sure that only the case that matched runs and others are skipped 
 // if there is no break statement the next case below will also execute 
 // case act as a strict equality operator
+
+// statement vs expression
+// any expression is any line of code that produces a value like 
+// 3 + 4
+// any number is also consider a expression like 1991 
+// true && false && !false is also a expression as it produsces a value true
+// a variable holding a value is also a expression
+// statements are made up of expressions but do not produce a value on its on
+// if/else is considered as a statement 
+// if(23>10){
+//   const str = '23 is bigger'
+// }
+// the above exmaple does not create a value on its own and is made up of expressions like 23>10 and '23 is bigger'
+
+// ternary operators 
+// they are similar to if else statments
+// condition ? true block : false block 
+// this helps us to dyamically delcare variables 
+// let number = 21
+// let glassHas = number>20? "wine" : "water"
+// when using template literals we can not pass a complete if/else statement into the string, instead we can use a ternay expression 
+// console.log(`I like to drink ${ number>20? "wine" : "water"}`)

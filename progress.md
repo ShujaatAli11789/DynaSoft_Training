@@ -40,3 +40,38 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
 . logic operators (boolean logic)
 . completed challenge 3 
 . switch statement 
+
+9/18/2026
+
+. statements vs expressions 
+. ternary operators 
+. completed challenge 4
+. completed quiz
+
+02-Fundamentals-Part-02
+
+. Strict mode in javascript
+. functions in detail 
+    => fucntions declaration vs function expressions
+    => arrow functions 
+    => calling functions from inside another function
+. completed challenge 5
+. arrays 
+. basic array operations 
+. completed challenge 6
+. introduction to objects
+. dot and bracket notations 
+. completed challenge 7
+. loops 
+    => continue & break
+    => nested loops
+. completed challenge 8
+. completed quiz
+
+-- started section 5 --
+. VS code setup
+    => prettier 
+    => live server 
+    => node.js
+. covered letures on how to be a better programmer and solve problems 
+. solved temperatureAmplitudeProblem
