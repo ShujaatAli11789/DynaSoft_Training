@@ -75,3 +75,13 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
     => node.js
 . covered letures on how to be a better programmer and solve problems 
 . solved temperatureAmplitudeProblem
+
+
+// 9/21/2026
+
+. Debugging
+. completed challenge 9
+. section 6 HTML & CSS crash course
+. Project: guess my number 
+. Project: model window
+. Pig Game

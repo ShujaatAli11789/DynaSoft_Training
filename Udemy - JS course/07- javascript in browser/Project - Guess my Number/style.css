@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+#reset {
+  border: none;
+  background: white;
+  color: black;
+  font-family: "Press Start 2P", cursive;
+  font-size: 24px;
+  padding: 20px;
+
+  cursor: pointer;
+}
+#mainHeading {
+  text-align: center;
+  font-size: 50px;
+}
+
+#actualNumberContainer {
+  padding-top: 10px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#whiteLine {
+  position: absolute;
+  top: 50%;
+  height: 10px;
+  left: 0px;
+  background-color: white;
+  width: 100%;
+}
+#actualNumberDisplay {
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  align-content: center;
+  z-index: 10;
+}
+#controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.halfControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  height: 300px;
+  width: 50%;
+}
+.halfControls > input {
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+  
+}
+.halfControls > button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 24;
+  padding: 15px;
+  outline: none;
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+#score,#highscore{
+width: 100%;
+text-align: left;
+}
+.halfControls:last-child{
+    align-items: flex-start;
+    height: 260px;
+}
