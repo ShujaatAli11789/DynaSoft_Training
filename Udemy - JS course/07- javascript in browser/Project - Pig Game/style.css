@@ -51,6 +51,7 @@ body {
 }
 .active {
   background-color: rgb(241, 182, 192);
+  border-bottom: 5px solid rgb(226, 15, 50) ;
 }
 
 #newGame,
@@ -59,7 +60,19 @@ body {
   background-color: rgba(255, 255, 255, 0.859);
   padding: 15px;
   border-radius: 10rem;
-  cursor: pointer;
+
+  outline: none;
+  border: none;
+  transition:
+    transform 0.12s ease,
+    background-color 0.12s ease;
+}
+
+#newGame:active,
+#rollDiceBtn:active,
+#hold:active {
+  transform: scale(0.94);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .playerIntro {
@@ -89,4 +102,8 @@ body {
 
 .currentScoreDisplayContiner > .score {
   color: white;
+}
+
+.win{
+  background-color:  rgb(29, 201, 29);
 }
