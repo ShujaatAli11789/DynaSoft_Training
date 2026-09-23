@@ -97,3 +97,17 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
 => arguments keyword
 => memory management
 => shallow copy / deep copy
+
+// 9/23/2026
+
+.started section 9  
+. array destructuring
+. object destructuring
+. spread operator
+. rest pattern and parameters
+. && and || operators - srt circuiting
+. Nullish Coalescing operator (??)
+. logical asignment operators ||= , ??= , &&=
+. for of loop
+. optional chaining 
+. set
