@@ -111,3 +111,14 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
 . for of loop
 . optional chaining 
 . set
+
+// 9/24/2024
+
+. new set operational methods
+. map
+. strings part 1,2,3
+. solved practice questions
+. started section 10
+. default parameters
+. how passing arguments work, value vs reference 
+. first class functions / and higher order functions

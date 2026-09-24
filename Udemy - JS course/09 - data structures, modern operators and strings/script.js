@@ -359,7 +359,7 @@
 // const [fiveStarRatings = 0, oneStarRatings = 0, threeStarRatings = 0] =
 //   ratingStars;
 
-// spread and rest operators 
+// spread and rest operators
 
 // // ADVANCED JS CHALLENGES: DESTRUCTURING, SPREAD & REST
 // =======================================================
@@ -369,7 +369,7 @@
 // ------------------------------------------
 // This represents a complex API response.
 // 1. Extract the 'rating' of the FIRST product and rename it to 'topRating'.
-// 2. Extract the 'rating' of the SECOND product, rename it to 'secondRating', 
+// 2. Extract the 'rating' of the SECOND product, rename it to 'secondRating',
 //    and provide a default value of 0 (since it doesn't exist).
 
 // const apiResponse = {
@@ -385,10 +385,8 @@
 // // TODO: Write your destructuring code here (try to do it in one single line/statement)
 // const { data:{products:[{metrics:{rating: topRating}}, {metrics:{rating:secondRating = 0 }}]}} = apiResponse
 
-
 // console.log(topRating);    // Expected output: 4.8
 // console.log(secondRating); // Expected output: 0
-
 
 // // ------------------------------------------
 // // Challenge 2: Immutable Updates (Nested Spread)
@@ -416,7 +414,6 @@
 // console.log(gameState.inventory.length === 2); // Expected: true (Original must not be mutated!)
 // console.log(gameState.stats.mana === 50);      // Expected: true (Original must not be mutated!)
 
-
 // // ------------------------------------------
 // // Challenge 3: Function Parameters (Rest & Destructuring)
 // // ------------------------------------------
@@ -425,9 +422,9 @@
 // // 2. Inside the map function, destructure each transaction object directly in the parameter list.
 // //    Extract 'price' and 'qty', setting a default 'qty' of 1 if it is missing.
 
-// // TODO: Update the function signature 
+// // TODO: Update the function signature
 // function calculateTotals( discount, ...transactions ) {
-  
+
 //   // TODO: Update the map parameter to destructure the objects
 //   return transactions.map( ( { price, qty = 1 }) => {
 //     return (price * qty) - discount;
@@ -440,21 +437,21 @@
 // // We pass the discount (10) first, then spread an array of transaction objects
 // const finalTotals = calculateTotals(10, obj1, obj2);
 
-// console.log(finalTotals); // Expected output: [90, 20] 
+// console.log(finalTotals); // Expected output: [90, 20]
 // // (50 * 2) - 10 = 90
 // // (30 * 1) - 10 = 20
 
-// short circuiting 
+// short circuiting
 
-// && 
+// &&
 // when comapring two or more values like this: let x = 1 && "100" && false
 // since && operator works by showing ouput true by reciveing all inouts as true
 // for and operator, in short circuiting, it returns the last truthy value or first falsy value
 // meaning let x = 1 && 2 will get 2 in it or let x = false && 1 && true will get false in it
 // (last truthy or first falsey value)
 
-// || 
-// or operator works oppositly as compared to  && , it returns the first truthy value or the last falsey value if every input is false 
+// ||
+// or operator works oppositly as compared to  && , it returns the first truthy value or the last falsey value if every input is false
 
 // x = 1 || 0 => x = 1 , x = 0 || null => x = null
 // this arises problems like:
@@ -463,8 +460,6 @@
 // let hallLimit = 0
 // // but exppected guests will recive 10 guests as because or operator short ciruited on 0 as falsey value
 // let expectedGuests = hallLimit || 10
-
-
 
 // to avoid such problem we have nulish coalescing ?? operator
 // it only checks for nullish values like null or undefined instead of falsey values
@@ -477,6 +472,78 @@
 // the order of the items is not specific, it is random
 // to create a new set we do let orderSet = new Set(["Pasta", "Pizza", "risoto", "risoto"])
 // this would return {"Pasta", "Pizza", "risoto"} while eliminating all duplicating items
-// set use hash maps to save elements in memory 
-// set has has(),add(),clear(),delete() methods to mutate 
+// set use hash maps to save elements in memory
+// set has has(),add(),clear(),delete() methods to mutate
 
+// to remove duplicates from an array, we can use the following method
+// let dupArray = ["pizza", "piazza", "pineapple", "purple"];
+// let dupSet = new Set(dupArray);
+// let uniqueArray = [...dupSet]; or
+// let uniqueArray = [...new Set(dupArray)]
+// console.log(uniqueArray);
+
+// to check how many unique elements are present in an array we can use the above example
+// let uniqueElements = Set(dupArray).size;
+//
+// some new methods were introduced:
+// union
+// it takes two sets and return a new set with all the unique elements of both sets
+// let firstSet = new Set(["ali, hashim"]); // => {'ali','hashim'}
+// let secondSet = new Set(["shujaat"]); // => {'shujaat'}
+// let unionSet = firstSet.union(secondSet); // => {'shujaat','ali','hashim'}
+
+//intersection
+// this return set with only unique elements common in both sets
+// let firstSet = new Set(["ali", "hashim"]); // => {'ali','hashim'}
+// let secondSet = new Set(["ali","shujaat"]); // => {'ali,shujaat'}
+// let unionSet = firstSet.inersection(secondSet); // => {'shujaat','ali','hashim'}
+
+// deifference
+
+// this returns elements of first set that  are not present in the second set
+// let firstSet = new Set(["ali", "hashim"]); // => {'ali','hashim'}
+// let secondSet = new Set(["ali","shujaat"]); // => {'ali,shujaat'}
+// let unionSet = firstSet.difference(secondSet); // => {'hashim'}
+
+// symmetric difference
+// gives uniques elements from both sets that are not common
+// let firstSet = new Set(["ali", "hashim"]); // => {'ali','hashim'}
+// let secondSet = new Set(["ali","shujaat"]); // => {'ali,shujaat'}
+// let unionSet = firstSet.symmetricDifference(secondSet); // => {'hashim', 'shujaat'}
+
+// strings
+
+// strings has many useful properties an  methods like arrays do
+// string.length gives the length of the string like a array
+// we can access any character of a string by accessing its index
+// let str = 'hashim'
+// console.log(str[1]) // => 'a'
+// or we can check the index of a character
+// str.indexOf('a') => 1, it returns the index of first matching element
+// similarly we can get the last index of multiple elements
+// str.lastIndexOf('h') // => 3
+// if a string does not have a charater, whose index we are trying to look up, it simply returns -1
+
+// we can get the starting index of an entire word
+// str = 'my name is hashim'
+// str.indexof('hashim') // => 11
+
+// we can get a specific part of a string
+// str.slice(starting index) // => this returns a string that start from that index and ends at the last index of the original string
+// we can also pass in the ending index like string.slice(starting index, ending index) returns the charactter starts from the starting index and ends before the ending index, the ending index is not included
+
+// we have toLowerCase and toUpperCase methods to completly turn the string into lower case and uppercase
+// let nameStr = 'hashim' // => nameStr.toUppercase()
+// let nameStr2 = 'HASHIM' // => nameStr.toLowerCase()
+// let trimmedEmail = ' Hashim@email.com ' // => removes empty space from the start and the end of string
+// we have trimStart() and trimEnd() to remove empty spaces from the start and from the end seperately
+// to replace a character from the specific index in a array, we can use .replace('charcter to be replaced', 'character to replace with') - this replace the first occurence of the character
+// to replace all the occurences we use replaceAll()
+// we can replace complete words with .replace() method
+
+// we can check if a string starts with a certain sub string or not
+// we use .stratsWith() to check this
+
+// let role = "admin hasim"
+// let isAllowed = role.startsWith('admin ')? true : false
+// we can also check is a string ends with a certain substring using endsWith()
