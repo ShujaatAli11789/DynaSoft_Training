@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
+  color: #444;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#welcome {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.logo {
+  height: 3.25rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.signIn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signIn > input {
+  width: 120px;
+  border: none;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  transition: all 0.3s;
+}
+
+.signIn > input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(180, 180, 180, 0.3);
+}
+
+.signIn > button {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.signIn > button:hover,
+.signIn > button:focus {
+  color: #777;
+  outline: none;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#content_container {
+  max-width: 65%;
+  align-self: center;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 1s;
+}
+
+.currentBalContainer {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.balance-label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.balance-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+#userBalance {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#transactionsContainer {
+  flex: 4;
+  background-color: transparent;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+#transactions {
+  height: 500px;
+  overflow-y: scroll;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.transactionDetails {
+  padding: 1rem 0;
+  background-color: transparent;
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.summary {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.summary-val {
+  font-size: 1.25rem;
+  margin-right: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+.summary-val.in,
+.summary-val.interest {
+  color: #66c873;
+}
+
+.summary-val.out {
+  color: #f5465d;
+}
+
+.btn-sort {
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-timer {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.timer {
+  font-weight: 600;
+}
+
+.transControlsContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.operation {
+  border-radius: 1rem;
+  padding: 15px 40px;
+  color: #333;
+}
+
+.transmoney {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.requestAmount {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.closeAccountCont {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.operation h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem 1rem;
+}
+
+.requestAmount .form {
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.form-btn {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 2.1rem;
+}
+
+.form-btn:focus,
+.form-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+
+.movements__row {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.movements__type {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.movements__date {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #666;
+}
+
+.movements__type--deposit {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.movements__type--withdrawal {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.movements__value {
+  font-size: 15px;
+
+  margin-left: auto;
+}

@@ -122,3 +122,17 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
 . default parameters
 . how passing arguments work, value vs reference 
 . first class functions / and higher order functions
+
+
+// 9/24/2024
+
+. functions taking functions as a parameter
+. fucntions returning functions 
+. bind() and call() methods
+. immediatly invoked function expressions 
+. closures
+. started section 11
+. arrays 
+. array methods 
+. looping arrays => forEach
+. started Project - Bankist App

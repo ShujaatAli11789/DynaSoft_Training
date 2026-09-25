@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png" />
+  </head>
+  <body>
+    <header>
+      <div id="welcome">Log in to get started</div>
+      <img src="assets/logo.png" alt="app logo" class="logo" />
+      <div class="signIn">
+        <input type="text" placeholder="User" id="user" />
+        <input type="password" placeholder="PIN" id="PIN" />
+        <button id="signin_btn">&rarr;</button>
+      </div>
+    </header>
+
+    <main id="content_container" class="hidden">
+      <div class="currentBalContainer">
+        <div class="currentBalAndDate">
+          <p class="balance-label">Current balance</p>
+          <p class="balance-date">
+            As of <span class="date">25/09/2026</span>,
+            <span class="time">15:19</span>
+          </p>
+        </div>
+        <div id="userBalance">25 952,59 €</div>
+      </div>
+
+      <div id="transactionsContainer">
+        <div id="transactions">
+          <div class="movements__row inTransRec">
+            <div class="movements__type movements__type--deposit">
+              7 deposit
+            </div>
+            <div class="movements__date">08/03/2020</div>
+            <div class="movements__value">79,97 €</div>
+          </div>
+
+          <!-- OUTGOING TRANSACTION (Withdrawal) -->
+          <div class="movements__row outTransRec">
+            <div class="movements__type movements__type--withdrawal">
+              6 withdrawal
+            </div>
+            <div class="movements__date">23/12/2019</div>
+            <div class="movements__value">-133,90 €</div>
+          </div>
+        </div>
+
+        <div class="transactionDetails">
+          <p class="summary">
+            IN <span id="inTrans" class="summary-val in">27 035,20 €</span> OUT
+            <span id="outTrans" class="summary-val out">1082,61 €</span>
+            INTEREST
+            <span id="intrest" class="summary-val interest">323,46 €</span>
+            <button class="btn-sort">&downarrow; SORT</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="transControlsContainer">
+        <div class="operation transmoney">
+          <h2>Transfer money</h2>
+          <form class="form">
+            <div class="input-group">
+              <input type="text" id="transToInput" />
+              <label>Transfer to</label>
+            </div>
+            <div class="input-group">
+              <input type="number" id="transToAmount" />
+              <label>Amount</label>
+            </div>
+            <button class="form-btn">&rarr;</button>
+          </form>
+        </div>
+
+        <div class="operation requestAmount">
+          <h2>Request loan</h2>
+          <form class="form">
+            <div class="input-group">
+              <input type="number" id="reqLoan" />
+              <label>Amount</label>
+            </div>
+            <button class="form-btn">&rarr;</button>
+          </form>
+        </div>
+
+        <div class="operation closeAccountCont">
+          <h2>Close account</h2>
+          <form class="form">
+            <div class="input-group">
+              <input type="text" id="closeUserInput" />
+              <label>Confirm user</label>
+            </div>
+            <div class="input-group">
+              <input type="password" id="closePinInput" />
+              <label>Confirm PIN</label>
+            </div>
+            <button class="form-btn">&rarr;</button>
+          </form>
+        </div>
+        <p class="logout-timer">
+          You will be logged out in <span class="timer">08:02</span>
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
