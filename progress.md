@@ -87,9 +87,9 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
 . Pig Game (completed)
 . started section 8
 => how javascript works behined the scenes
-=> compilation / interpretation 
+=> compilation / interpretation
 => javascript engine / runtime
-=> execution context and call stack 
+=> execution context and call stack
 => Scope and scope chain
 => Hoisting
 => Temporal dead zone
@@ -109,7 +109,7 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
 . Nullish Coalescing operator (??)
 . logical asignment operators ||= , ??= , &&=
 . for of loop
-. optional chaining 
+. optional chaining
 . set
 
 // 9/24/2024
@@ -120,19 +120,31 @@ By date: 9/17/2026 12:40 i have covered TraversyMedia Crash course which covered
 . solved practice questions
 . started section 10
 . default parameters
-. how passing arguments work, value vs reference 
+. how passing arguments work, value vs reference
 . first class functions / and higher order functions
 
-
-// 9/24/2024
+// 9/25/2024
 
 . functions taking functions as a parameter
-. fucntions returning functions 
+. fucntions returning functions
 . bind() and call() methods
-. immediatly invoked function expressions 
+. immediatly invoked function expressions
 . closures
 . started section 11
-. arrays 
-. array methods 
+. arrays
+. array methods
 . looping arrays => forEach
 . started Project - Bankist App
+
+// 9/28/2024
+. project - Bankist app continued
+. completed challenge
+. map() method
+. filter() method
+. find() method
+. findIndex()
+. some() && every()
+. flat() && flatMap()  
+. Object.groupBy()
+. reverse() && toReversed(), .wtih(), toSorted(), toSplice()
+ 
