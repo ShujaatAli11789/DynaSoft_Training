@@ -148,7 +148,7 @@
     . Object.groupBy()
     . reverse() && toReversed(), .wtih(), toSorted(), toSplice()
 
-    // 9/28/2024
+    // 9/29/2024
     . started section 12
     . converting and checking numbers
     . Math and rounding
@@ -162,3 +162,19 @@
     . started section 13
     . selecting, creating and deleting elements
     . styles, attirbutes and classes in dom
+
+    // 9/30/2024
+
+    . event propagation, bubling and capturing 
+    . event delegation 
+    . dom traversal 
+    . Intersection Observer Api
+    . Lifecycycle DOM events: DOMContentLoaded , load , beforeunload
+
+    . started section 14
+    . OOP: abstraction, encapsulation 
+    . Prototype
+    . ES6 classes
+    . inheritence 
+    => inhertence with contructor functions and ES6 classes
+    . Encapsulation : Private Class Fleilds and Methods
